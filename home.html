@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/coffeehouse.jpg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">What it means to go "electric"</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">Companies going electric</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">Best companies</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">When They will go electric</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">"Electric Veichles By Eric Scoggins</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px">the<br>Cafe</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">15 Adr street, 5015</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">The Definition of "Electric Veichle"</span></h5>
+    <p>An electric car or battery electric car is an automobile that is propelled by one or more electric motors, using energy stored in batteries. Compared to internal combustion engine (ICE) vehicles, electric cars are quieter, have no exhaust emissions, and lower emissions overall.[1] In the United States and the European Union, as of 2020, the total cost of ownership of recent electric vehicles is cheaper than that of equivalent ICE cars, due to lower fueling and maintenance costs.[2][3] Charging an electric car can be done at a variety of charging stations; these charging stations can be installed in both houses and public areas..</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      
+
+    </div>
+    
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Car Companies That Went Electric and When They plan on going full electric</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Cars ');" id="myLink">
+        <div class="w3-col s6 tablink">#1 Tesla.
+		#2 Jaguar
+		#3 ROlls Royce
+		</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'When');">
+        <div class="w3-col s6 tablink">#1 tesla, Inc. is an American electric vehicle and clean energy company based in Austin, Texas, United States. Tesla designs and manufactures electric cars, battery energy storage from home to grid-scale, solar panels and solar roof tiles, and related products and services
+		#2 In 2025 Jaguar also plans to go 100% electric.There description is (Jaguar a British luxury car brand Jaguar announced in February that it would go all-electric from 2025. Its maker, Jaguar Land Rover, which also sells the Land Rover, has pledged to become a net zero carbon business by 2039)
+		#3 2030 Rolls Royce Plans on going 100% electric.There description is(Jaguar. British luxury car brand Jaguar announced in February that it would go all-electric from 2025. Its maker, Jaguar Land Rover, which also sells the Land Rover, has pledged to become a net zero carbon business by 2030)</div>
+      </a>
+    </div>
+
+    <div id="cars" class="w3-container menu w3-padding-48 w3-card">
+      <h5>#1 Tesla</h5>
+      <h5>Ford</h5>
+      <p class="w3-text-grey">In 2025 Ford plans on realising its first electric vehicle with the description (Get ready for the smartest, most connected F-150 we've ever built. The F-150 Lightning is not only packed with all of the benefits that a zero-emissions truck can offer. It's designed to live up to its “Built Ford Tough” heritage.)</p><br>
+    
+      <h5>Jaguar</h5>
+      <p class="w3-text-grey">In 2025 Jaguar also plans to go 100% electric.There description is (Jaguar a British luxury car brand Jaguar announced in February that it would go all-electric from 2025. Its maker, Jaguar Land Rover, which also sells the Land Rover, has pledged to become a net zero carbon business by 2039)</p><br>
+    
+      <h5>Rolls Royce</h5>
+      <p class="w3-text-grey">By 2030 Rolls Royce Plans on going 100% electric.There description is(Jaguar. British luxury car brand Jaguar announced in February that it would go all-electric from 2025. Its maker, Jaguar Land Rover, which also sells the Land Rover, has pledged to become a net zero carbon business by 2030)</p><br>
+    
+      <h5>Cadillac</h5>
+      <p class="w3-text-grey">By 2030 Cadillac plans on going fully electric.There description is (GM's Cadillac brand is going electric, as the automaker confirmed that every new vehicle will be all-electric starting now. ... “We will be leaving this decade as an EV brand, as things stand today, which means we will not be selling ICE vehicles by 2030.)</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Coffee</h5>
+      <p class="w3-text-grey">Regular coffee 2.50</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-grey">Chocolate espresso with milk 4.50</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-grey">Whiskey and coffee 5.00</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-grey">Hot tea, except not hot 3.00</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-grey">Coke, Sprite, Fanta, etc. 2.50</p>
+    </div>  
+    <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+
+
+</body>
+</html>
